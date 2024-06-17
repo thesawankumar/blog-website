@@ -2,7 +2,7 @@
 import Link from "next/link";
 import styles from "./authLinks.module.css";
 import { useState } from "react";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
   const status = "notauthenicated";
@@ -21,9 +21,7 @@ const AuthLinks = () => {
         </>
       )}
       <div className={styles.burger} onClick={() => setOpen(!open)}>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
+        <RxHamburgerMenu size={20} />
       </div>
       {open && (
         <div className={styles.responsiveMenu}>

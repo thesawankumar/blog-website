@@ -3,8 +3,8 @@
 }
 
 .burger {
-  width: 20px;
-  height: 16px;
+  /* width: 20px;
+  height: 16px; */
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
